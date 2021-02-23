@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.tech.springboot.dao.CourseStudentdao;
 import com.tech.springboot.dao.Coursedao;
 import com.tech.springboot.dao.Departmentdao;
 import com.tech.springboot.dao.Instructordao;
@@ -33,8 +34,8 @@ public class StudentServiceImpl implements StudentService{
 	@Autowired
 	private Coursedao courseRepo;
 //	
-//	@Autowired 
-//	private CourseStudentdao course_studentRepo;
+	@Autowired 
+	private CourseStudentdao course_studentRepo;
 	
 	@Autowired
 	private Departmentdao departmentRepo;
